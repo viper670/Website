@@ -12,6 +12,7 @@
         rel="stylesheet" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Space+Grotesk:wght@300;500;700&display=swap');
+
         :root {
             --bg-deep: #020408;
             --bg-dark: #050c14;
@@ -37,6 +38,7 @@
             margin: 0;
             padding: 0;
         }
+
         .font-display {
             font-family: 'Space Grotesk', sans-serif;
         }
@@ -307,7 +309,9 @@
         .scroll-hint {
             position: absolute;
             bottom: 36px;
-            left: 50%;
+            left: 0;
+            width: 100%;
+            pointer-events: none;
             transform: translateX(-50%);
             display: flex;
             flex-direction: column;
@@ -315,6 +319,7 @@
             gap: 8px;
             opacity: 0;
             animation: fade-up 0.8s 1.8s forwards;
+            z-index: 10;
         }
 
         .scroll-hint span {
@@ -1027,7 +1032,8 @@
         <div class="about-grid">
             <div class="about-text">
                 <p>
-                    I'm a <strong>Web developer and SA-MP / open.mp developer</strong>.This is a website based on my Samp developing passionate about crafting
+                    I'm a <strong>Web developer and SA-MP / open.mp developer</strong>.This is a website based on my
+                    Samp developing passionate about crafting
                     high-quality, lag-free multiplayer servers that keep players coming back.
                     From roleplay systems to competitive deathmatch arenas, I've built it all.
                 </p>
@@ -1193,7 +1199,8 @@
                 <!-- Replace src with your screenshot or video path -->
                 <div class="project-media">
                     <div class="media-placeholder">
-                        <img src="Screenshot_2025-12-27-15-55-36-018_com.mxtech.videoplayer.ad.jpg" alt="Admin Control Panel preview" />
+                        <img src="Screenshot_2025-12-27-15-55-36-018_com.mxtech.videoplayer.ad.jpg"
+                            alt="Admin Control Panel preview" />
                     </div>
                 </div>
                 <p class="project-desc">
@@ -1206,7 +1213,6 @@
                     <span class="project-tag">MySQL</span>
                     <span class="project-tag">RP</span>
                 </div>
-                <a href="#" class="project-link">View Details →</a>
             </div>
 
             <!-- Project 04 -->
@@ -1229,7 +1235,24 @@
                     <span class="project-tag">Pawn</span>
                     <span class="project-tag">DM</span>
                 </div>
-                <a href="#" class="project-link">View Details →</a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-glow"></div>
+                <div class="project-number">// Project 05</div>
+                <div class="project-title">Admin Panel</div>
+                <!-- Replace src with your screenshot or video path -->
+                <div class="project-media">
+                    <div class="media-placeholder">
+                        <img src="sa-mp-030.png" alt="Race Circuit System preview" />
+                    </div>
+                </div>
+                <p class="project-desc">
+                    Admin panel to control admin actions without commands like FiveM
+                </p>
+                <div class="project-tags">
+                    <span class="project-tag">Pawn</span>
+                </div>
             </div>
 
         </div>
